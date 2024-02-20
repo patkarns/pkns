@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+
+  .col {
+    width: 50%;
+    padding: 5rem;
+
+    img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      a {
+        color: #1E1E24;
+      }
+    }
+  }
+
+}

@@ -1,13 +1,19 @@
-import resume from './Resume_Pat_K.pdf';
+// import MenuIcon from '@mui/icons-material/Menu';
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/home/home.tsx";
+import "./App.scss";
+import BakingExperiments from "./pages/baking-experiments/baking-experiments.tsx";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import FlouristBrownies from './pages/baking-experiments/recipes/flourist-brownies.tsx';
 
-import './App.css';
 
 function App() {
   return (
-    <div>
-      Hi! :)
-      <a href={resume} download="Resume_Pat_Karns.pdf">Resume</a>
-      < a href="mailto:karns.napat@gmail.com">karns.napat@gmail.com</a>
+    <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="baking-experiments" element={<BakingExperiments />}/>
+        </Routes>
 
     </div>
   );
